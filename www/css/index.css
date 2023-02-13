@@ -1,0 +1,116 @@
+body {
+    
+    text-align: center;
+    font-family: Sans-serif;
+}
+
+nav {
+    background-color: burlywood;
+    height: 80px;
+    margin: -8px;
+    display: flex;
+    justify-content: end;
+}
+
+nav p {
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    padding-top: 6px;
+    font-size: large;
+    cursor: pointer;
+}
+
+nav p:hover {
+    color: #ae0606;
+}
+
+textarea {
+    line-height: 16px;
+    background-color: rgb(238, 232, 225);
+    border-radius: 10px;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 5px;
+    width: 100%;
+    height: 30%;
+
+}
+
+#title {
+    line-height: 30px;
+    background-color: rgb(238, 232, 225);
+    border-radius: 5px;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 30px;
+    margin-top: 10px;
+    width: 25%;
+    height: 35px;
+}
+
+.saved-data {
+
+    color: black;
+    font-size: 20px;
+    border: 2px;
+    background-color: #e39632;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    line-height: 40px;
+
+}
+
+.main {
+    display: none;
+    animation: main 2s forwards;
+    float: left;
+
+}
+
+@keyframes main {
+    from {
+        opacity: 0;
+        background-color: #ae8406;
+    };
+    to {
+        opacity: 1;
+        background-color: #ae0606;
+    };
+
+}
+
+
+input {
+    width: 35%;
+    line-height: 40px;
+    border-radius: 8px;
+    box-shadow: 22px #ae0606;
+}
+
+button {
+    width: 80px;
+    line-height: 35px;
+    margin: 12px;
+    border-radius: 8px;
+    background-color: burlywood;
+
+}
+
+button:focus {
+    cursor: pointer;
+}
+
+.delete {
+    margin-top: 50px;
+    
+}
+
+.delete-bin {
+    display: none;
+    height: 50%;
+    border-radius: 8px;
+    background-color: #ffefef;
+}
+

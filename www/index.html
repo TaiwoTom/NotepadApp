@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad App</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <nav>
+        <p onclick="typing()">Write</p>
+        <p onclick="save()">Save</p>
+        <P onclick="bin()">Deleted note</P>
+    </nav>
+
+
+    <header>
+        <h1>TT Notepad</h1>
+    </header>
+
+    <div id="main-body">
+        <main id="main" class="main">
+            <h2>New note</h2>
+            <input type="text" placeholder="enter your title" id="title">
+            <br>
+            <textarea name="" id="textarea" cols="90" rows="20" placeholder="type here"></textarea>
+            <button onclick="save()">Save note</button>
+        </main>
+
+        <div class="delete">
+            <h2>Delete note</h2>
+            <input type="text" placeholder="enter title of note to delete" id="delete">
+            <br>
+            <button onclick="clr()">Delete</button>
+        </div>
+        <hr>
+
+        <div class="title-for-saved" id="saved-data">
+            <h2>Your saved notes</h2>
+        </div>
+
+    </div>
+
+    <div id="delete-bin" class="delete-bin">
+        <h2>Deleted notes</h2>
+
+    </div>
+
+
+
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
